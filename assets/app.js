@@ -6,5 +6,10 @@ import './bootstrap.js';
  * which should already be in your base.html.twig.
  */
 import './styles/app.css';
+import Unity from 'unity';
+
+const unity = new Unity("/assets/Build");
+
+unity.render();
 
 console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');

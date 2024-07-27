@@ -10,14 +10,14 @@ class UnityRequestHandlerService extends UnityRequest
     public function handleSuccess(object $data): JsonResponse
     {
         ###> do something ###
-        if(!isset($data->field)) {
-            return $this->handleError('invalid field is missing');
+        if(!isset($data->username)) {
+            return $this->handleError('invalid username is missing');
         }
-        if(empty($data->field)) {
-            return $this->handleError('field cannot be empty'); 
+        if(empty($data->username)) {
+            return $this->handleError('username cannot be empty'); 
         }
         // $unityTest = $this->serializer->deserialize($data, UnityTest::class, 'json');
-        $data->responseField = 'data added from server';
+        $data->password = 'data added from server';
         ###< do something ### 
         return new JsonResponse(['Data'=> $data]);
     }

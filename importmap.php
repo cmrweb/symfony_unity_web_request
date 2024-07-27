@@ -16,6 +16,14 @@ return [
         'path' => './assets/app.js',
         'entrypoint' => true,
     ],
+    'unity' => [
+        'path' => './assets/controllers/unity_canvas.js',
+        'entrypoint' => true,
+    ],
+    'buildloader' => [
+        'path' => './assets/Build/Builds.loader.js',
+        'entrypoint' => true,
+    ],
     '@hotwired/stimulus' => [
         'version' => '3.2.2',
     ],

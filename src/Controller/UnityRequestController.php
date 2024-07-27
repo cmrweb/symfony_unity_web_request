@@ -10,8 +10,15 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class UnityRequestController extends AbstractController
 {
+
+    #[Route(path: '/', name: 'app_game')]
+    public function index() : Response
+    {
+        return $this->render('unity/index.html.twig');
+    }
+
     #[Route('/unity/request', name: 'app_unity_request')]
-    public function index(Request $request, UnityRequestHandlerService $unityRequestHandler): Response
+    public function request(Request $request, UnityRequestHandlerService $unityRequestHandler): Response
     { 
         return $unityRequestHandler->handleRequest($request);
     }
