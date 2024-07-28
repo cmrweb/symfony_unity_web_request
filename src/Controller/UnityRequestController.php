@@ -14,7 +14,7 @@ class UnityRequestController extends AbstractController
     #[Route(path: '/', name: 'app_game')]
     public function index() : Response
     {
-        return $this->render('unity/index.html.twig');
+        return $this->render('unity/index.html.twig', []);
     }
 
     #[Route('/unity/request', name: 'app_unity_request')]

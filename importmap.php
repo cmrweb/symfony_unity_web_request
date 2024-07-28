@@ -17,11 +17,7 @@ return [
         'entrypoint' => true,
     ],
     'unity' => [
-        'path' => './assets/controllers/unity_canvas.js',
-        'entrypoint' => true,
-    ],
-    'buildloader' => [
-        'path' => './assets/Build/Builds.loader.js',
+        'path' => './assets/controllers/unity_controller.js',
         'entrypoint' => true,
     ],
     '@hotwired/stimulus' => [
