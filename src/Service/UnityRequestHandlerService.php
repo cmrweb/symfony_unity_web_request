@@ -42,9 +42,9 @@ class UnityRequestHandlerService extends UnityRequest
     
             $this->em->persist($user);
             $this->em->flush();
-            $data->password = "Created";
+            $data->status = "Created";
         }
-        $data->password = "Connected";
+        $data->status = "Connected";
         $this->security->login($user, AuthAuthenticator::class);
         ###< do something ### 
         return new JsonResponse(['Data'=> $data]);
