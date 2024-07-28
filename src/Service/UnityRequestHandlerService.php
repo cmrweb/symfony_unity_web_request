@@ -1,9 +1,8 @@
 <?php
 namespace App\Service;
 
-use App\Entity\UnityTest;
 use Cmrweb\UnityWebRequest\UnityRequest;
-use Symfony\Component\HttpFoundation\JsonResponse; 
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 class UnityRequestHandlerService extends UnityRequest
 { 

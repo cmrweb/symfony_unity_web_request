@@ -19,7 +19,7 @@ class UnityRequestController extends AbstractController
 
     #[Route('/unity/request', name: 'app_unity_request')]
     public function request(Request $request, UnityRequestHandlerService $unityRequestHandler): Response
-    { 
+    {
         return $unityRequestHandler->handleRequest($request);
     }
 }
